@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco Cafe - My first cafe..</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/coco-cafe-logo.png" alt="Coco Cafe Logo" class="logo-image">
+                <div class="logo-text">
+                    <h1>Coco Cafe</h1>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button class="cart-btn" id="cartBtn">
+                    🛒 Cart (<span id="cartCount">0</span>)
+                </button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Coco Cafe</h1>
+                <p class="hero-subtitle">My first cafe..</p>
+                <p class="hero-description">Experience delicious food and refreshing drinks in a cozy atmosphere</p>
+                <a href="#menu" class="cta-button">Explore Our Menu</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-text">At Coco Cafe, we believe in creating memorable experiences through exceptional food and warm hospitality. Our carefully crafted menu features fresh, locally sourced ingredients prepared with passion and served with love.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="menu-tabs">
+                    <button class="tab-button active" data-tab="breakfast">Breakfast</button>
+                    <button class="tab-button" data-tab="lunch">Lunch</button>
+                    <button class="tab-button" data-tab="dinner">Dinner</button>
+                    <button class="tab-button" data-tab="drinks">Drinks</button>
+                    <button class="tab-button" data-tab="desserts">Desserts</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="breakfast" class="menu-category active">
+            <div class="container">
+                <h3 class="category-title">Breakfast</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/Oatmeal.jpg" alt="Oat Meal" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Oat Meal</h4>
+                            <p class="item-description">Healthy and nutritious oat meal to start your day</p>
+                            <div class="item-footer">
+                                <span class="item-price">$12</span>
+                                <button class="add-to-cart-btn" data-name="Oat Meal" data-price="12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop&crop=center" alt="Fresh Vegetables" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Vegetables</h4>
+                            <p class="item-description">Fresh seasonal vegetables</p>
+                            <div class="item-footer">
+                                <span class="item-price">$10</span>
+                                <button class="add-to-cart-btn" data-name="Vegetables" data-price="10">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=400&h=300&fit=crop&crop=center" alt="Fresh Fruits" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Fruits</h4>
+                            <p class="item-description">Fresh seasonal fruits</p>
+                            <div class="item-footer">
+                                <span class="item-price">$8</span>
+                                <button class="add-to-cart-btn" data-name="Fruits" data-price="8">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/Croissant.webp" alt="Croissant" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Croissant</h4>
+                            <p class="item-description">Buttery, flaky French pastry</p>
+                            <div class="item-footer">
+                                <span class="item-price">$6</span>
+                                <button class="add-to-cart-btn" data-name="Croissant" data-price="6">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=400&h=300&fit=crop&crop=center" alt="Pancakes" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Pancakes</h4>
+                            <p class="item-description">Fluffy pancakes served with syrup</p>
+                            <div class="item-footer">
+                                <span class="item-price">$14</span>
+                                <button class="add-to-cart-btn" data-name="Pancakes" data-price="14">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lunch" class="menu-category">
+            <div class="container">
+                <h3 class="category-title">Lunch</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/rice-lunch.webp" alt="Rice Bowl" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Rice</h4>
+                            <p class="item-description">Perfectly cooked rice</p>
+                            <div class="item-footer">
+                                <span class="item-price">$15</span>
+                                <button class="add-to-cart-btn" data-name="Rice" data-price="15">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=400&h=300&fit=crop&crop=center" alt="Golden Chips" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Chips</h4>
+                            <p class="item-description">Crispy golden chips</p>
+                            <div class="item-footer">
+                                <span class="item-price">$8</span>
+                                <button class="add-to-cart-btn" data-name="Chips" data-price="8">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=300&fit=crop&crop=center" alt="Fresh Pasta" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Pasta</h4>
+                            <p class="item-description">Fresh pasta with your choice of sauce</p>
+                            <div class="item-footer">
+                                <span class="item-price">$18</span>
+                                <button class="add-to-cart-btn" data-name="Pasta" data-price="18">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/lamb-pie.jpeg" alt="Lamb Pie" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Lamb Pie</h4>
+                            <p class="item-description">Savory lamb pie with flaky pastry</p>
+                            <div class="item-footer">
+                                <span class="item-price">$22</span>
+                                <button class="add-to-cart-btn" data-name="Lamb Pie" data-price="22">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dinner" class="menu-category">
+            <div class="container">
+                <h3 class="category-title">Dinner</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop&crop=center" alt="Rice Dinner" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Rice</h4>
+                            <p class="item-description">Perfectly cooked rice</p>
+                            <div class="item-footer">
+                                <span class="item-price">$15</span>
+                                <button class="add-to-cart-btn" data-name="Rice" data-price="15">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=400&h=300&fit=crop&crop=center" alt="Crispy Chips" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Chips</h4>
+                            <p class="item-description">Crispy golden chips</p>
+                            <div class="item-footer">
+                                <span class="item-price">$8</span>
+                                <button class="add-to-cart-btn" data-name="Chips" data-price="8">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/pasta-dinner.webp" alt="Pasta Dinner" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Pasta</h4>
+                            <p class="item-description">Fresh pasta with your choice of sauce</p>
+                            <div class="item-footer">
+                                <span class="item-price">$18</span>
+                                <button class="add-to-cart-btn" data-name="Pasta" data-price="18">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/lamb-pie.jpeg" alt="Savory Pie" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Lamb Pie</h4>
+                            <p class="item-description">Savory lamb pie with flaky pastry</p>
+                            <div class="item-footer">
+                                <span class="item-price">$22</span>
+                                <button class="add-to-cart-btn" data-name="Lamb Pie" data-price="22">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=400&h=300&fit=crop&crop=center" alt="Chicken Stir Fry" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Curried Chicken Rice Noodle Stir Fry</h4>
+                            <p class="item-description">Aromatic curried chicken with rice noodles</p>
+                            <div class="item-footer">
+                                <span class="item-price">$24</span>
+                                <button class="add-to-cart-btn" data-name="Curried Chicken Rice Noodle Stir Fry" data-price="24">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="drinks" class="menu-category">
+            <div class="container">
+                <h3 class="category-title">Drinks</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/water.png" alt="Fresh Water" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Water</h4>
+                            <p class="item-description">Fresh spring water</p>
+                            <div class="item-footer">
+                                <span class="item-price">$3</span>
+                                <button class="add-to-cart-btn" data-name="Water" data-price="3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop&crop=center" alt="Tea Selection" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Tea</h4>
+                            <p class="item-description">Various tea selections</p>
+                            <div class="item-footer">
+                                <span class="item-price">$5</span>
+                                <button class="add-to-cart-btn" data-name="Tea" data-price="5">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop&crop=center" alt="Fresh Coffee" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Coffee</h4>
+                            <p class="item-description">Freshly brewed coffee</p>
+                            <div class="item-footer">
+                                <span class="item-price">$6</span>
+                                <button class="add-to-cart-btn" data-name="Coffee" data-price="6">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=300&fit=crop&crop=center" alt="Fresh Juices" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Juices</h4>
+                            <p class="item-description">Fresh fruit juices</p>
+                            <div class="item-footer">
+                                <span class="item-price">$7</span>
+                                <button class="add-to-cart-btn" data-name="Juices" data-price="7">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400&h=300&fit=crop&crop=center" alt="Lemonade" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Lemonade</h4>
+                            <p class="item-description">Refreshing homemade lemonade</p>
+                            <div class="item-footer">
+                                <span class="item-price">$6</span>
+                                <button class="add-to-cart-btn" data-name="Lemonade" data-price="6">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/matcha.webp" alt="Matcha Drink" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Super Green Matcha</h4>
+                            <p class="item-description">Energizing green matcha blend</p>
+                            <div class="item-footer">
+                                <span class="item-price">$8</span>
+                                <button class="add-to-cart-btn" data-name="Super Green Matcha" data-price="8">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=400&h=300&fit=crop&crop=center" alt="Tropical Drink" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Pineapple Mint & Turmeric</h4>
+                            <p class="item-description">Tropical blend with health benefits</p>
+                            <div class="item-footer">
+                                <span class="item-price">$9</span>
+                                <button class="add-to-cart-btn" data-name="Pineapple Mint & Turmeric" data-price="9">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/pear-blackberry.jpg" alt="Berry Drink" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Pear and Blackberry</h4>
+                            <p class="item-description">Sweet and tart fruit combination</p>
+                            <div class="item-footer">
+                                <span class="item-price">$8</span>
+                                <button class="add-to-cart-btn" data-name="Pear and Blackberry" data-price="8">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/orange-turmeric.jpg" alt="Orange Turmeric" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Orange and Turmeric</h4>
+                            <p class="item-description">Citrus with anti-inflammatory turmeric</p>
+                            <div class="item-footer">
+                                <span class="item-price">$8</span>
+                                <button class="add-to-cart-btn" data-name="Orange and Turmeric" data-price="8">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop&crop=center" alt="Grapefruit Drink" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Grapefruit Rosemary and Maple</h4>
+                            <p class="item-description">Unique herbal and citrus blend</p>
+                            <div class="item-footer">
+                                <span class="item-price">$9</span>
+                                <button class="add-to-cart-btn" data-name="Grapefruit Rosemary and Maple" data-price="9">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="desserts" class="menu-category">
+            <div class="container">
+                <h3 class="category-title">Desserts</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop&crop=center" alt="Delicious Cakes" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Cakes</h4>
+                            <p class="item-description">Variety of delicious cakes</p>
+                            <div class="item-footer">
+                                <span class="item-price">$12</span>
+                                <button class="add-to-cart-btn" data-name="Cakes" data-price="12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop&crop=center" alt="Ice Cream" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Ice Creams</h4>
+                            <p class="item-description">Creamy ice cream in various flavors</p>
+                            <div class="item-footer">
+                                <span class="item-price">$8</span>
+                                <button class="add-to-cart-btn" data-name="Ice Creams" data-price="8">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=300&fit=crop&crop=center" alt="Chocolate Cake" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Chilli Chocolate Cake</h4>
+                            <p class="item-description">Rich chocolate cake with a hint of spice</p>
+                            <div class="item-footer">
+                                <span class="item-price">$15</span>
+                                <button class="add-to-cart-btn" data-name="Chilli Chocolate Cake" data-price="15">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=400&h=300&fit=crop&crop=center" alt="Banana Muffin" loading="lazy">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-name">Banana Bread Muffin</h4>
+                            <p class="item-description">Moist banana muffin with walnuts</p>
+                            <div class="item-footer">
+                                <span class="item-price">$9</span>
+                                <button class="add-to-cart-btn" data-name="Banana Bread Muffin" data-price="9">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Visit Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Location</h3>
+                        <p>123 Cafe Street<br>Coffee District<br>City, State 12345</p>
+                        
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 7:00 AM - 8:00 PM<br>Saturday - Sunday: 8:00 AM - 9:00 PM</p>
+                        
+                        <h3>Contact</h3>
+                        <p>Phone: (555) 123-4567<br>Email: hello@cococafe.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Coco Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: $<span id="cartTotal">0.00</span></strong>
+            </div>
+            <div class="table-input">
+                <label for="tableNumber">Table Number:</label>
+                <input type="number" id="tableNumber" placeholder="Enter table number" min="1" max="50">
+            </div>
+            <button class="submit-order-btn" id="submitOrder">Submit Order</button>
+        </div>
+    </div>
+    
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
