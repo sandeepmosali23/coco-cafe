@@ -1,37 +1,131 @@
-These cypress tests are divided into three main folders i.e. play,watch & signup 
+# Coco Cafe Website
 
-## Setup
+A modern, responsive cafe website featuring an interactive menu system with shopping cart functionality.
 
-Install dependencies
+## 🌟 Features
+
+- **Responsive Design** - Works perfectly on desktop, tablet, and mobile devices
+- **Interactive Menu** - Browse through 5 categories: Breakfast, Lunch, Dinner, Drinks, Desserts
+- **Shopping Cart** - Add items to cart, adjust quantities, and place orders
+- **Modern UI** - Clean, professional design inspired by premium cafe websites
+- **Image Gallery** - High-quality food and drink photography
+- **Contact Information** - Easy-to-find location and hours
+
+## 📱 Menu Categories
+
+### Breakfast (5 items)
+- Oat Meal - $12
+- Vegetables - $10
+- Fruits - $8
+- Croissant - $6
+- Pancakes - $14
+
+### Lunch (4 items)
+- Rice - $15
+- Chips - $8
+- Pasta - $18
+- Lamb Pie - $22
+
+### Dinner (5 items)
+- Rice - $15
+- Chips - $8
+- Pasta - $18
+- Lamb Pie - $22
+- Curried Chicken Rice Noodle Stir Fry - $24
+
+### Drinks (10 items)
+- Water - $3
+- Tea - $5
+- Coffee - $6
+- Juices - $7
+- Lemonade - $6
+- Super Green Matcha - $8
+- Pineapple Mint & Turmeric - $9
+- Pear and Blackberry - $8
+- Orange and Turmeric - $8
+- Grapefruit Rosemary and Maple - $9
+
+### Desserts (4 items)
+- Cakes - $12
+- Ice Creams - $8
+- Chilli Chocolate Cake - $15
+- Banana Bread Muffin - $9
+
+## 🛒 Cart Features
+
+- Add any menu item to cart with one click
+- Adjust quantities with +/- controls
+- Remove items from cart
+- Real-time total calculation
+- Table number input for orders
+- Order submission (prototype - logs to console)
+
+## 🚀 Technologies Used
+
+- **HTML5** - Semantic markup
+- **CSS3** - Modern styling with CSS Grid, Flexbox, and animations
+- **Vanilla JavaScript** - Interactive functionality
+- **Google Fonts** - Poppins and Playfair Display typography
+- **Responsive Images** - Optimized loading with lazy loading
+
+## 📁 File Structure
 
 ```
-npm install
-```
-## Debugging
-```
-npm run cy:open
+coco-cafe/
+├── index.html          # Main HTML file
+├── styles.css          # All CSS styles
+├── script.js           # JavaScript functionality
+├── images/             # Image assets
+│   ├── coco-cafe-logo.png
+│   ├── Oatmeal.jpg
+│   ├── Croissant.webp
+│   ├── rice-lunch.webp
+│   ├── lamb-pie.jpeg
+│   ├── pasta-dinner.webp
+│   ├── matcha.webp
+│   ├── pear-blackberry.jpg
+│   ├── orange-turmeric.jpg
+│   └── water.png
+└── README.md           # This file
 ```
 
-## Stan UI tests
-To run cypress tests on a page:
+## 🌐 Live Demo
 
-```
-npm run cy:run:play
-npm run cy:run:signup
-npm run cy:run:watch
-```
+Visit the live website: [Add your GitHub Pages URL here after deployment]
 
-## Framework:
-Cypress is a great tool and have used in the past with minimal issues.
-Cypress also has great community support and one tools provides everything i.e reporting, dashboard, multi-browser support etc.
+## 🛠️ Local Development
 
-## Structure:
-While structuring tests i tried to cover all high traffic areas i.e home page, login, watch history etc.
-Also while writing player test hit a road block where cypress was blocking playing videos ( no support for DRM).
-Manage to fix player issue with community support, and which consumed most of my time.
-It was difficult to get good selectors for Watch page, and it good to have test id which will make tests less flaky 
-If I have more time, I would love to extend the player tests coverage and use better selectors for watch page
-# pet-store-api
-# pet-store-api
-# pet-store-api
-# pet-store-api
+1. Clone or download this repository
+2. Open terminal and navigate to the project folder
+3. Start a local server:
+   ```bash
+   python3 -m http.server 8000 --bind 0.0.0.0
+   ```
+4. Open `http://localhost:8000` in your browser
+
+## 📱 Mobile Responsive
+
+The website is fully responsive and tested on:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
+
+## 🎨 Design Credits
+
+- Inspired by modern cafe websites like Three Beans Coffee
+- Logo and branding: Custom Coco Cafe design
+- Photography: Mix of local images and Unsplash stock photos
+
+## 📞 Contact
+
+For questions about this website or Coco Cafe:
+- **Location**: 123 Cafe Street, Coffee District, City, State 12345
+- **Phone**: (555) 123-4567
+- **Email**: hello@cococafe.com
+- **Hours**: 
+  - Monday - Friday: 7:00 AM - 8:00 PM
+  - Saturday - Sunday: 8:00 AM - 10:00 PM
+
+---
+
+*Built with ❤️ for Coco Cafe - "My first cafe.."*
